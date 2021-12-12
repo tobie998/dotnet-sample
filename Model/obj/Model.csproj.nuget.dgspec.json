@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Admin\\source\\repos\\nhatky_sanluongkhoan\\Model\\Model.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Admin\\source\\repos\\nhatky_sanluongkhoan\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\nhatky_sanluongkhoan\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\nhatky_sanluongkhoan\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\nhatky_sanluongkhoan\\Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "targetAlias": "net4.6",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "targetAlias": "net4.6",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "PagedList.Mvc": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

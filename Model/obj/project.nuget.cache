@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UuTzIosZJs/t7fcTnBtiiWXC439lTcFVZW/Chr1ooh0fMBfMUbCo8ZWGz+CXIsK6nCqudojHkhGuV4gznkQccA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\nhatky_sanluongkhoan\\Model\\Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\pagedlist\\1.17.0\\pagedlist.1.17.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\pagedlist.mvc\\4.5.0\\pagedlist.mvc.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

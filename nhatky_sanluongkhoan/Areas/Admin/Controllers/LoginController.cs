@@ -1,6 +1,6 @@
 ﻿using Model.DAO;
 using nhatky_sanluongkhoan.Areas.Admin.Data;
-using nhatky_sanluongkhoan.Session;
+using nhatky_sanluongkhoan.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,8 +24,8 @@ namespace nhatky_sanluongkhoan.Areas.Admin.Controllers
             if(ModelState.IsValid)
             {
                 var userDao = new DAOUser();
-                var result = userDao.Login(login.Username, login.Password);
-                if (result)
+                var result = userDao.Login(login.Username, Encryptor.MD5Hash(login.Password));
+                if (result == 1)
                 {
                     var user = userDao.GetUserByID(login.Username);
                     var userSession = new UserSession();
@@ -34,17 +34,31 @@ namespace nhatky_sanluongkhoan.Areas.Admin.Controllers
                     Session.Add(ConstantSession.USER_SESSION, userSession);
                     return RedirectToAction("Home", "Home");
                 }
+                else if (result == 0)
+                {
+                    ModelState.AddModelError("", "Account is not exist");
+                    return View("Index");
+                }
+                else if (result == -1)
+                {
+                    ModelState.AddModelError("", "Account is not active");
+                    return View("Index");
+                } 
+                else if (result == -2)
+                {
+                    ModelState.AddModelError("", "Password is incorrect");
+                    return View("Index");
+                }
                 else
                 {
-                    ModelState.AddModelError("", "Login is error");
+                    ModelState.AddModelError("", "Login is incorrect");
                     return View("Index");
                 }
             }
             else
             {
                 return View("Index");
-            }
-            
+            }            
         }
     }
 }

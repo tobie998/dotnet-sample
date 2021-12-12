@@ -27,17 +27,30 @@ namespace Model.DAO
             return context.Users.SingleOrDefault(x => x.UserName == username);
         }
 
-        public bool Login(string username, string password)
+        public int Login(string username, string password)
         {
-            var res = context.Users.Count(x => x.UserName == username && x.Password == password);
-            if (res > 0)
+            var res = context.Users.SingleOrDefault(x => x.UserName == username && x.Password == password);
+            if (res == null)
             {
-                return true;
+                return 0;
             } else
             {
-                return false;
+                if (res.Status == false)
+                {
+                    return -1;
+                }
+                else
+                {
+                    if (res.Password == password)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        return -2;
+                    }
+                }
             }
-
         }
     }
 }

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="PagedList.Mvc" Version="4.5.0" />
   </ItemGroup>
 
   <ItemGroup>
