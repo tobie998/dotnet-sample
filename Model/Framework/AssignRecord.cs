@@ -1,4 +1,4 @@
-namespace Model.Framework
+﻿namespace Model.Framework
 {
     using System;
     using System.Collections.Generic;
@@ -11,18 +11,21 @@ namespace Model.Framework
     {
         public long ID { get; set; }
 
+        [Display(Name = "Ngày Thực Hiện Khoán")]
+        [DataType(DataType.Date)]
         public DateTime? WorkDate { get; set; }
 
         [StringLength(3)]
+        [Display(Name = "Giờ Bắt Đầu")]
         public string StartTime { get; set; }
 
         [StringLength(3)]
+        [Display(Name = "Giờ Kết Thúc")]
         public string EndTime { get; set; }
 
         [StringLength(5)]
+        [Display(Name = "Ca Làm")]
         public string Shift { get; set; }
-
-        public long? ProductID { get; set; }
 
         public int? DisplayOrder { get; set; }
 

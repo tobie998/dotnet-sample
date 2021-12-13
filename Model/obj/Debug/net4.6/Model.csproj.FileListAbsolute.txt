@@ -5,6 +5,7 @@ C:\Users\Admin\source\repos\nhatky_sanluongkhoan\Model\bin\Debug\net4.6\EntityFr
 C:\Users\Admin\source\repos\nhatky_sanluongkhoan\Model\bin\Debug\net4.6\EntityFramework.dll
 C:\Users\Admin\source\repos\nhatky_sanluongkhoan\Model\bin\Debug\net4.6\PagedList.dll
 C:\Users\Admin\source\repos\nhatky_sanluongkhoan\Model\bin\Debug\net4.6\PagedList.Mvc.dll
+C:\Users\Admin\source\repos\nhatky_sanluongkhoan\Model\obj\Debug\net4.6\Model.csproj.AssemblyReference.cache
 C:\Users\Admin\source\repos\nhatky_sanluongkhoan\Model\obj\Debug\net4.6\Model.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Admin\source\repos\nhatky_sanluongkhoan\Model\obj\Debug\net4.6\Model.AssemblyInfoInputs.cache
 C:\Users\Admin\source\repos\nhatky_sanluongkhoan\Model\obj\Debug\net4.6\Model.AssemblyInfo.cs

@@ -17,6 +17,7 @@
         public string Name { get; set; }
 
         [Display(Name = "Ngày hết hạn")]
+        [DataType(DataType.Date)]
         public DateTime? ExpireDate { get; set; }
 
         [StringLength(10)]
@@ -24,6 +25,7 @@
         public string RegisterCode { get; set; }
 
         [Display(Name = "Ngày đăng ký")]
+        [DataType(DataType.Date)]
         public DateTime? RegisterDate { get; set; }
 
         [StringLength(500)]
@@ -36,6 +38,9 @@
 
         [Display(Name = "Ngày tạo")]
         public DateTime? CreatedDate { get; set; }
+
+        //[Display(Name = "Mã Nhật Ký SLK")]
+        //public long? RecordId { get; set; }
 
         [StringLength(50)]
         [Display(Name = "Người tạo")]

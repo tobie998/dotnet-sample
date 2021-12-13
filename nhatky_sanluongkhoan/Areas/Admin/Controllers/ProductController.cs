@@ -58,5 +58,41 @@ namespace nhatky_sanluongkhoan.Areas.Admin.Controllers
             }
             return View("Index");
         }
+
+        [HttpGet]
+        public ActionResult Update(int id)
+        {
+            var productData = new DAOProduct();
+            var model = productData.ViewByID(id);
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Update(Product product)
+        {
+            if (ModelState.IsValid)
+            {
+                var productData = new DAOProduct();
+                bool id = productData.Update(product);
+                if (id)
+                {
+                    return RedirectToAction("Index", "Product");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Cannot update new product!");
+                    return View("Update");
+                }
+            }
+            return View("Index");
+        }
+
+        [HttpDelete]
+        public ActionResult Delete(int id)
+        {
+            var productData = new DAOProduct();
+            productData.Delete(id);
+            return RedirectToAction("Index", "Product");
+        }
     }
 }
